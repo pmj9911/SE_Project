@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  <display-name>PlacementCellAllTestProject</display-name>
+  <welcome-file-list>
+    <welcome-file>navign.html</welcome-file>
+    <welcome-file>navign.htm</welcome-file>
+    <welcome-file>navign.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  
+  <servlet>
+        <servlet-name>placement-login</servlet-name>
+        <servlet-class>
+            org.springframework.web.servlet.DispatcherServlet
+        </servlet-class>
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>placement-login</servlet-name>
+        <!-- all the jsp names go here -->
+        <url-pattern>/index.jsp</url-pattern>
+        <url-pattern>/forms2.jsp</url-pattern>
+        <url-pattern>/fp.jsp</url-pattern>      
+        <url-pattern>/admin.jsp</url-pattern>   
+        <url-pattern>/reg.jsp</url-pattern>
+        <url-pattern>/userprofile.jsp</url-pattern>
+        <url-pattern>/navign.jsp</url-pattern>
+        <url-pattern>/profile.jsp</url-pattern>
+        <url-pattern>/forms2aftersignup.jsp</url-pattern>
+        <url-pattern>/loginagain.jsp</url-pattern>
+        <url-pattern>/updatedemail.jsp</url-pattern>
+        <url-pattern>/apply.jsp</url-pattern>
+        <url-pattern>/company.jsp</url-pattern>
+        <url-pattern>/reg2.jsp</url-pattern>
+         
+        <!-- all the html links go below here -->  
+        <url-pattern>/forms2.html</url-pattern>
+        <url-pattern>/fp.html</url-pattern>
+        <url-pattern>/admin.html</url-pattern>
+        <url-pattern>/reg.html</url-pattern>
+        <url-pattern>/userprofile.html</url-pattern>
+        <url-pattern>/navign.html</url-pattern>
+        <url-pattern>/profile.html</url-pattern>
+        <url-pattern>/forms2aftersignup.html</url-pattern>
+        <url-pattern>/loginagain.html</url-pattern>
+        <url-pattern>/updatedemail.html</url-pattern>
+        <url-pattern>/apply.html</url-pattern>
+        <url-pattern>/company.html</url-pattern>
+        <url-pattern>/reg2.html</url-pattern>
+        
+        <url-pattern>*.html</url-pattern>
+    </servlet-mapping>
+    
+</web-app>
